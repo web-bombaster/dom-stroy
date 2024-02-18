@@ -1,0 +1,15 @@
+.soc-btns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .contacts & {
+        margin-bottom: 24px;
+    }
+}
+.soc-btns__item {
+}
+.soc-btns__icon {
+    height: 32px;
+    width: auto;
+}
