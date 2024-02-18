@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// функция будет перемещать блок в указанное место при определенной ширине экрана
 
-    // Перенос меню на мобильном
+	// Перенос меню на мобильном
 	let moving = function () {
 		const windowWidth = window.innerWidth; // ширина экрана
 
@@ -111,10 +111,55 @@ document.addEventListener("DOMContentLoaded", function () {
 				.prepend(document.querySelector(".nav-menu"));
 		} else {
 			document
-				.querySelector(".nav .container").append(document.querySelector(".nav-menu"));
+				.querySelector(".nav .container")
+				.append(document.querySelector(".nav-menu"));
 		}
 	};
 
 	moving();
 	window.addEventListener("resize", moving);
+
+	// Инициализация слайдера swiper
+	// https://swiperjs.com/
+
+	// Инициализаия Swiper слайдеров
+	function initSwiper() {
+		// Акции и спецпредложения
+		if (document.querySelector(".special-offers__slider")) {
+			const specialOffers = new Swiper(".special-offers__slider", {
+				spaceBetween: 30,
+				slidesPerView: 1,
+				loop: true,
+				// disableOnInteraction: false,
+				// pauseOnMouseEnter: true,
+				breakpoints: {
+					800: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+						loop: true,
+					},
+					1200: {
+						slidesPerView: 3,
+						spaceBetween: 30,
+						loop: true,
+					},
+				},
+				// pagination: {
+				// 	el: ".special-offers__slider__pagination",
+				// 	clickable: true,
+				// },
+				navigation: {
+					nextEl: ".special-offers__slider-next",
+					prevEl: ".special-offers__slider-prev",
+				},
+			});
+		}
+	}
+
+	// window.addEventListener("resize", initSwiper);
+	window.addEventListener("resize", function () {
+		initSwiper();
+	});
+
+	initSwiper();
 });

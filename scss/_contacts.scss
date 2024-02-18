@@ -17,7 +17,7 @@
 	border-radius: var(--brs);
 
 	p {
-        margin: 20px 0;
+		margin: 20px 0;
 		display: flex;
 		flex-direction: column;
 		gap: 0;
@@ -27,13 +27,13 @@
 		font-size: 16px;
 		line-height: 160%;
 
-        &:first-of-type {
-            margin-top: 0;
-        }
+		&:first-of-type {
+			margin-top: 0;
+		}
 
-        &:last-of-type {
-            margin-bottom: 0;
-        }
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 
 	a {
@@ -42,11 +42,15 @@
 }
 
 .contacts__phone {
-    margin-bottom: 4px;
+	margin-bottom: 4px;
 	font-weight: 500;
 	font-size: 32px;
 	line-height: 125%;
 	color: #000;
+
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+	}
 }
 .contacts__mail {
 	font-weight: 400;
