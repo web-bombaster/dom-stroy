@@ -6,15 +6,35 @@
 }
 .contacts-map {
 	position: absolute;
+	z-index: 2;
 	inset: 0;
 }
 .container {
 }
 .contacts__box {
+	position: relative;
+	z-index: 3;
+	left: calc((100vw - 1660px) / 2);
+
 	background-color: #fff;
 	padding: 32px;
 	max-width: 514px;
 	border-radius: var(--brs);
+	box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.05);
+
+	@media screen and (max-width: 1660px) {
+		left: 100px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		left: 40px;
+	}
+
+	@media screen and (max-width: 600px) {
+		left: 20px;
+		right: 20px;
+		width: calc(100vw - 40px);
+	}
 
 	p {
 		margin: 20px 0;

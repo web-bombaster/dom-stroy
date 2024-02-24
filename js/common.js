@@ -153,7 +153,54 @@ document.addEventListener("DOMContentLoaded", function () {
 					prevEl: ".special-offers__slider-prev",
 				},
 			});
-		}
+		};
+
+		// gallery
+		if (document.querySelector(".gallery__slider")) {
+			const specialOffers = new Swiper(".gallery__slider", {
+				spaceBetween: 15,
+				slidesPerView: "auto",
+				centeredSlides: true,
+				loop: true,
+				breakpoints: {
+					992: {
+						spaceBetween: 30,
+					},
+				},
+				navigation: {
+					nextEl: ".gallery__slider-next",
+					prevEl: ".gallery__slider-prev",
+				},
+			});
+		};
+
+				// reviews
+				if (document.querySelector(".reviews__slider")) {
+					const specialOffers = new Swiper(".reviews__slider", {
+						spaceBetween: 30,
+						slidesPerView: 1,
+						// centeredSlides: true,
+						loop: true,
+						breakpoints: {
+							600: {
+								slidesPerView: 2,
+								spaceBetween: 20,
+							},
+							992: {
+								slidesPerView: 3,
+								spaceBetween: 20,
+							},
+							1200: {
+								slidesPerView: 3,
+								spaceBetween: 30,
+							},
+						},
+						navigation: {
+							nextEl: ".reviews__slider-next",
+							prevEl: ".reviews__slider-prev",
+						},
+					});
+				};
 	}
 
 	// window.addEventListener("resize", initSwiper);
