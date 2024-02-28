@@ -1,0 +1,29 @@
+.breadcrumbs {
+	padding: 10px 0;
+
+	@media screen and (max-width: 992px) {
+		padding: 0;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 480px) {
+		margin-bottom: 16px;
+	}
+
+	a {
+		color: var(--color-accent);
+	}
+}
+.breadcrumbs-box {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 4px 20px;
+
+	@media screen and (max-width: 768px) {
+		gap: 4px 10px;
+	}
+}
