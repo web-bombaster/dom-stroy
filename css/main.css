@@ -535,6 +535,7 @@ section {
   .content {
     padding-bottom: 60px;
     flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
