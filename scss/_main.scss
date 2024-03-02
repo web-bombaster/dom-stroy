@@ -36,6 +36,10 @@ body {
 		padding-top: 70px;
 	}
 
+	@media screen and (max-width: 380px) {
+		padding-top: 60px;
+	}
+
 	&.toggle {
 		height: calc(100vh - 70px);
 		overflow-y: hidden;
