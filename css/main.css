@@ -1806,7 +1806,7 @@ section {
 .reviews__name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 1.25;
 }
 
 .breadcrumbs {
@@ -2152,4 +2152,126 @@ section {
 .projects__btn {
   margin-top: 10px;
   align-self: flex-start;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviews-list__item {
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+.reviews-list__content > *:first-child {
+  margin-top: 0;
+}
+.reviews-list__content > *:last-child {
+  margin-bottom: 0;
+}
+
+.reviews-list__info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reviews-list__img {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.reviews-list__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+@media screen and (max-width: 992px) {
+  .form {
+    padding: 20px;
+  }
+}
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  background: #fff;
+  min-width: 100%;
+  max-width: 100%;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000;
+}
+.form textarea {
+  min-height: 105px;
+}
+.form input[type=file] {
+  display: none;
+}
+
+.form__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+.form__label .required {
+  color: #ff0000;
+}
+
+.input-file-descr {
+  padding: 20px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px dashed #dadada;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #7d7d7d;
+  cursor: pointer;
+}
+.input-file-descr b {
+  font-weight: 600;
+  color: #696969;
+}
+
+.form__btn {
+  margin-top: 10px;
+  align-self: center;
+  display: inline-flex;
 }
