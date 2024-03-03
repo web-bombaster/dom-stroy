@@ -46,17 +46,17 @@
 	flex-direction: column;
 	justify-content: flex-start;
 
-	width: calc(100% / 3 - 30px * 2 / 3);
+	width: calc(100% / 4 - 30px * 3 / 4);
 
 	background-color: #fff;
 	border-radius: var(--brs);
 
 	@media screen and (max-width: 1600px) {
-		width: calc(100% / 3 - 15px * 2 / 3);
+		width: calc(100% / 4 - 15px * 3 / 4);
 	}
 
 	@media screen and (max-width: 992px) {
-		width: 100%;
+		width: calc(100% / 2 - 15px * 1 / 2);
 		max-width: 500px;
 	}
 

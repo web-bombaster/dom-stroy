@@ -1364,26 +1364,25 @@ section {
 .about__box {
   display: flex;
   justify-content: space-between;
-  gap: 10%;
+  gap: 30px;
 }
-@media screen and (max-width: 1600px) {
-  .about__box {
-    gap: 5%;
-  }
-}
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
   .about__box {
     flex-direction: column;
-    gap: 40px;
   }
 }
 
 .about__left {
-  flex-grow: 1;
+  width: calc(50% - 15px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
+}
+@media screen and (max-width: 992px) {
+  .about__left {
+    width: 100%;
+  }
 }
 
 .about__text > *:first-child {
@@ -1394,25 +1393,19 @@ section {
 }
 
 .about__right {
-  min-width: 680px;
-  flex-grow: 1;
-  flex-shrink: 0;
+  width: calc(50% - 15px);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
   .about__right {
     order: -1;
-  }
-}
-@media screen and (max-width: 768px) {
-  .about__right {
-    min-width: 100%;
+    width: 100%;
   }
 }
 
 .about-adv {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  flex-direction: column;
+  gap: 20px;
   max-width: 680px;
 }
 @media screen and (max-width: 1200px) {
@@ -1428,7 +1421,7 @@ section {
 
 .about-adv__item {
   padding: 25px;
-  width: calc(50% - 20px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1437,37 +1430,26 @@ section {
   background: #fff;
   border-radius: var(--brs);
 }
-@media screen and (max-width: 992px) {
-  .about-adv__item {
-    width: calc(50% - 10px);
-  }
-}
-@media screen and (max-width: 480px) {
-  .about-adv__item {
-    width: 100%;
-  }
+
+.about-adv__box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .about-adv__icon {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   display: block;
 }
 
 .about-adv__title {
   margin: 0;
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 125%;
-  text-transform: lowercase;
   color: var(--color-accent);
 }
-@media screen and (max-width: 768px) {
-  .about-adv__title {
-    font-size: 20px;
-  }
-}
-
 .about-adv__descr {
   margin: 0;
   font-weight: 400;
@@ -1603,18 +1585,18 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: calc(33.3333333333% - 20px);
+  width: calc(25% - 22.5px);
   background-color: #fff;
   border-radius: var(--brs);
 }
 @media screen and (max-width: 1600px) {
   .price-list__item {
-    width: calc(33.3333333333% - 10px);
+    width: calc(25% - 11.25px);
   }
 }
 @media screen and (max-width: 992px) {
   .price-list__item {
-    width: 100%;
+    width: calc(50% - 7.5px);
     max-width: 500px;
   }
 }

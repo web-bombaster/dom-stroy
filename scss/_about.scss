@@ -1,6 +1,6 @@
 .about {
-position: relative;
-z-index: 2;
+	position: relative;
+	z-index: 2;
 	.container {
 		// display: flex;
 		// flex-direction: column;
@@ -11,24 +11,23 @@ z-index: 2;
 .about__box {
 	display: flex;
 	justify-content: space-between;
-	gap: 10%;
+	gap: 30px;
 
-	@media screen and (max-width: 1600px) {
-		gap: 5%;
-	}
-
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 992px) {
 		flex-direction: column;
-		gap: 40px;
 	}
 }
 .about__left {
-	flex-grow: 1;
+	width: calc(100% / 2 - 1 / 2 * 30px);
 
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 40px;
+
+	@media screen and (max-width: 992px) {
+		width: 100%;
+	}
 }
 .about__text {
 	& > * {
@@ -40,21 +39,13 @@ z-index: 2;
 		}
 	}
 }
-.about__btn {
-}
 .about__right {
-	// width: 100%;
-	min-width: 680px;
-	flex-grow: 1;
-	flex-shrink: 0;
+	width: calc(100% / 2 - 1 / 2 * 30px);
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 992px) {
 		order: -1;
+		width: 100%;
 	}
-
-    @media screen and (max-width: 768px) {
-        min-width: 100%;
-    }
 }
 .about__advantages {
 }
