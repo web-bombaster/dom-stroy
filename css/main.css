@@ -1593,7 +1593,6 @@ section {
   .price-list {
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1604,18 +1603,18 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: calc(25% - 22.5px);
+  width: calc(33.3333333333% - 20px);
   background-color: #fff;
   border-radius: var(--brs);
 }
 @media screen and (max-width: 1600px) {
   .price-list__item {
-    width: calc(25% - 11.25px);
+    width: calc(33.3333333333% - 10px);
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 992px) {
   .price-list__item {
-    width: calc(50% - 7.5px);
+    width: 100%;
     max-width: 500px;
   }
 }
@@ -1817,7 +1816,7 @@ section {
   position: relative;
   margin: 0;
   padding: 95px 32px 32px;
-  width: calc(25% - 22.5px);
+  width: calc(33.3333333333% - 20px);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1832,7 +1831,7 @@ section {
 }
 @media screen and (max-width: 992px) {
   .hypothec-steps__item {
-    width: calc(50% - 15px);
+    width: 100%;
   }
 }
 @media screen and (max-width: 560px) {
