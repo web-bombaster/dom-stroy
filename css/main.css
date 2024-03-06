@@ -602,19 +602,9 @@ section {
   gap: 20px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.25;
   color: #000;
-}
-@media screen and (max-width: 1200px) {
-  .header__logo {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .header__logo {
-    font-size: 18px;
-  }
 }
 @media screen and (max-width: 768px) {
   .header__logo {
@@ -814,7 +804,7 @@ section {
   display: inline-flex;
   padding: 12px 35px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   line-height: normal;
   text-decoration: none;
@@ -823,7 +813,6 @@ section {
 @media screen and (max-width: 1200px) {
   .nav-menu__link {
     padding: 10px 25px;
-    font-size: 16px;
   }
 }
 @media screen and (max-width: 992px) {
